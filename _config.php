@@ -16,9 +16,9 @@ $contactEmail = "anderszame@gmail.com";
 
 $version = "2.1";
 
-$discord = "https://discord.gg/5fUee5sS";https://byzanebio.vercel.app/
+$discord = "https://discord.gg/5fUee5sS";
 $github = "https://byzanebio.vercel.app/";
-$telegram = "";
+$telegram = "https://byzanebio.vercel.app/";
 $instagram = "https://www.instagram.com/zane_0xo "; 
 
 // all the api you need
