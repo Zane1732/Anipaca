@@ -1,6 +1,6 @@
 <?php 
 
-$conn = new mysqli("HOSTNAME", "USERNAME", "PASSWORD", "DATABASE");
+$conn = new mysqli("empty-sphynx-2956.internal", "root", "JzFsagqLlYIQgSiRIEaVzuvYXnihiFMU", "JzFsagqLlYIQgSiRIEaVzuvYXnihiFMU");
 
 if ($conn->connect_error) {
     error_log("Database connection failed: " . $conn->connect_error);
@@ -21,13 +21,13 @@ $telegram = "https://t.me/anipaca";
 $instagram = "https://www.instagram.com/pxr15_"; 
 
 // all the api you need
-$zpi = "https://your-hosted-api.com/api"; //https://github.com/PacaHat/zen-api
+$zpi = "https://q-iota-five.vercel.app/api"; //https://github.com/PacaHat/zen-api
 $proxy = $websiteUrl . "/src/ajax/proxy.php?url=";
+
 
 //If you want faster loading speed
 //$proxy = "https://your-hosted-proxy.com/api/v1/streamingProxy?url="; //https://github.com/MetaHat/m3u8-streaming-proxy
 
 
 $banner = $websiteUrl . "/public/images/banner.png";
-
     
