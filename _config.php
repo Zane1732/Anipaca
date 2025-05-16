@@ -1,10 +1,9 @@
 <?php 
 
-$conn_string = "host=gondola.proxy.rlwy.net port=25762 dbname=railway user=postgres password=GTmPFCVGfElBFtSZzGQWmgICccmJiCdY";
-$conn = pg_connect($conn_string);
+$conn = new mysqli("ql211.infinityfree.com", "if0_38799195", "zLXRwyl1JJ", "if0_38799195_XXX");
 
-if (!$conn) {
-    error_log("Database connection failed.");
+if ($conn->connect_error) {
+    error_log("Database connection failed: " . $conn->connect_error);
     die("Database connection failed.");
 }
 
@@ -25,7 +24,9 @@ $instagram = "https://www.instagram.com/pxr15_";
 $zpi = "https://q-iota-five.vercel.app/api"; //https://github.com/PacaHat/zen-api
 $proxy = $websiteUrl . "/src/ajax/proxy.php?url=";
 
+
 //If you want faster loading speed
 //$proxy = "https://your-hosted-proxy.com/api/v1/streamingProxy?url="; //https://github.com/MetaHat/m3u8-streaming-proxy
+
 
 $banner = $websiteUrl . "/public/images/banner.png";
