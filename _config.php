@@ -7,18 +7,18 @@ if ($conn->connect_error) {
     die("Database connection failed.");
 }
 
-$websiteTitle = "AniPaca";
+$websiteTitle = "ZANEFLIX";
 $protocol = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? "https" : "http";
 $websiteUrl = "{$protocol}://{$_SERVER['SERVER_NAME']}";
 $websiteLogo = $websiteUrl . "/public/logo/logo.png";
-$contactEmail = "@gmail.com";
+$contactEmail = "anderszame@gmail.com";
 
 $version = "2.1";
 
-$discord = "https://dcd.gg/anipaca";
-$github = "https://github.com/PacaHat";
-$telegram = "https://t.me/anipaca";
-$instagram = "https://www.instagram.com/pxr15_"; 
+$discord = "https://discord.gg/5fUee5sS";https://byzanebio.vercel.app/
+$github = "https://byzanebio.vercel.app/";
+$telegram = "";
+$instagram = "https://www.instagram.com/zane_0xo "; 
 
 // all the api you need
 $zpi = "https://q-iota-five.vercel.app/api"; //https://github.com/PacaHat/zen-api
