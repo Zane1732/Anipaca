@@ -1,9 +1,18 @@
-<?php 
+<?php
 
-$conn = new mysqli("empty-sphynx-2956.internal", "root", "JzFsagqLlYIQgSiRIEaVzuvYXnihiFMU", "JzFsagqLlYIQgSiRIEaVzuvYXnihiFMU");
+try {
+    $host = 'gondola.proxy.rlwy.net';
+    $port = 25762;
+    $dbname = 'railway';
+    $user = 'postgres';
+    $password = 'GTmPFCVGfElBFtSZzGQWmgICccmJiCdY';
 
-if ($conn->connect_error) {
-    error_log("Database connection failed: " . $conn->connect_error);
+    $dsn = "pgsql:host=$host;port=$port;dbname=$dbname";
+    $conn = new PDO($dsn, $user, $password);
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+} catch (PDOException $e) {
+    error_log("Database connection failed: " . $e->getMessage());
     die("Database connection failed.");
 }
 
@@ -20,14 +29,7 @@ $github = "https://github.com/PacaHat";
 $telegram = "https://t.me/anipaca";
 $instagram = "https://www.instagram.com/pxr15_"; 
 
-// all the api you need
-$zpi = "https://q-iota-five.vercel.app/api"; //https://github.com/PacaHat/zen-api
+$zpi = "https://q-iota-five.vercel.app/api";
 $proxy = $websiteUrl . "/src/ajax/proxy.php?url=";
 
-
-//If you want faster loading speed
-//$proxy = "https://your-hosted-proxy.com/api/v1/streamingProxy?url="; //https://github.com/MetaHat/m3u8-streaming-proxy
-
-
 $banner = $websiteUrl . "/public/images/banner.png";
-    
