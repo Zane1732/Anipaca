@@ -1,6 +1,6 @@
 <?php 
 
-$conn = new mysqli("ql211.infinityfree.com", "if0_38799195", "zLXRwyl1JJ", "if0_38799195_XXX");
+$conn = new mysqli("ql211.infinityfree.com", "if0_38799195", "zLXRwyl1JJ", "if0_38799195_zane");
 
 if ($conn->connect_error) {
     error_log("Database connection failed: " . $conn->connect_error);
